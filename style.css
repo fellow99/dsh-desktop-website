@@ -377,6 +377,15 @@ html[data-theme="dark"] .icon-btn .i-moon {
   color: var(--muted);
   letter-spacing: 0.02em;
 }
+.brand-logo {
+  height: 28px;
+  width: auto;
+  flex: none;
+  align-self: center;
+}
+.footer-brand-logo {
+  height: 22px;
+}
 
 .nav-links {
   display: flex;
