@@ -40,6 +40,10 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   clipboard) · plugin marketplace one click away.
 - **Architecture story ("How it works")**: in-process Host → same-origin UI → official
   data plane (`WebApiClient`), ending with "No CORS · No auth dance · No custom protocol".
+- **Current versions**: `deepseek-harness-desktop` **v0.1.2** and `deepseek-harness-harmony`
+  **v0.1.2**, both built on deepseek-harness **`dsh-v0.1.2-rc.1`** — the tag each project's
+  `patches/dsh-v0.1.2-rc.1/` directory and build script pin. Keep the website copy, these
+  numbers, and the two product READMEs in step.
 
 ### Copy accuracy guardrails (must hold forever)
 
