@@ -1,10 +1,10 @@
-# deepseek-harness-desktop-website
+# dsh-desktop-website
 
-> Product website (landing page) for the **DeepSeek Harness Desktop Editions** — the official
-> homepage of [deepseek-harness-desktop](../deepseek-harness-desktop) and
-> [deepseek-harness-harmony](../deepseek-harness-harmony).
+> Product website (landing page) for the **DSH Desktop Editions** — the official
+> homepage of [dsh-desktop](../dsh-desktop) and
+> [dsh-desktop-hos](../dsh-desktop-hos).
 >
-> Live: <https://fellow99.github.io/deepseek-harness-desktop-website/>
+> Live: <https://fellow99.github.io/dsh-desktop-website/>
 
 This document is the **design document** for the website: positioning, copy, structure,
 design system, interactions, and localization/deployment rules.
@@ -40,7 +40,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   clipboard) · plugin marketplace one click away.
 - **Architecture story ("How it works")**: in-process Host → same-origin UI → official
   data plane (`WebApiClient`), ending with "No CORS · No auth dance · No custom protocol".
-- **Current versions**: `deepseek-harness-desktop` **v0.1.5** and `deepseek-harness-harmony`
+- **Current versions**: `dsh-desktop` **v0.1.5** and `dsh-desktop-hos`
   **v0.1.5**, both built on deepseek-harness **`dsh-v0.1.5-rc.2`** — the tag each project's
   `patches/dsh-v0.1.5-rc.2/` directory and build script pin. Keep the website copy, these
   numbers, and the two product READMEs in step.
@@ -145,7 +145,7 @@ Deployment is handled by GitHub Actions
 (and manual `workflow_dispatch`) uploads the repo root and deploys to GitHub Pages.
 One-time repo setting required: **Settings → Pages → Source → "GitHub Actions"**.
 
-Expected URL after first deploy: <https://fellow99.github.io/deepseek-harness-desktop-website/>
+Expected URL after first deploy: <https://fellow99.github.io/dsh-desktop-website/>
 
 ## 8. Contribution checklist
 

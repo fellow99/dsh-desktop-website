@@ -1,4 +1,4 @@
-/* DeepSeek Harness Desktop Editions — shared theme-toggle logic.
+/* DSH Desktop Editions — shared theme-toggle logic.
    Both pages reference this file. It is language-neutral: the aria-label
    text is read from the button's data-label-* attributes so the same script
    serves index.html and index_zh.html. */

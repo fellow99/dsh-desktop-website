@@ -1,5 +1,5 @@
 /* =========================================================================
-   DeepSeek Harness Desktop Editions — shared stylesheet
+   DSH Desktop Editions — shared stylesheet
    All color/interaction styling is driven by CSS custom properties that
    switch on the <html data-theme="..."> attribute, with a no-JS fallback.
    ========================================================================= */
