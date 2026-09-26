@@ -23,7 +23,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 | `index_zh.html` | Simplified Chinese page (`lang="zh-CN"`), 1:1 structural mirror of `index.html` |
 | `style.css` | Shared stylesheet — all theming via CSS custom properties |
 | `script.js` | Shared theme-toggle logic (language-neutral, `data-label-*` driven) |
-| `images/light.png` `images/dark.png` | Real product screenshots of the dsh Web UI, light & dark theme (2398×1600) |
+| `images/light.png` `images/dark.png` | Real product screenshots captured on a HarmonyOS device, light & dark theme (1280×720) |
 
 ## 2. Positioning & key messages
 
@@ -35,7 +35,8 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 - **Four-desktop coverage is the headline differentiator** — Windows, Linux, macOS
   (Electron Desktop) + HarmonyOS. It appears in: hero lede, the four OS chips
   (`ul.os-strip`) under the lede, both platform cards, and the platforms disclaimer.
-- **Selling points (feature cards)**: 100% official dsh, zero upstream changes ·
+- **Selling points (feature cards)**: 100% official DeepSeek Harness, zero upstream
+  changes ·
   local-first, in-process host · a desktop citizen (tray / notifications / frameless /
   clipboard) · plugin marketplace one click away.
 - **Architecture story ("How it works")**: in-process Host → same-origin UI → official
@@ -62,9 +63,9 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 
 Both pages share one vertical structure (6 landmark sections):
 
-1. **Nav** (`header.site-header`): wordmark + `· Desktop`/`· 桌面版` suffix · anchor links
-   (Features / Platforms / How it works) · language switch · theme toggle. Nav links hide
-   ≤ 760px; brand + language + theme remain.
+1. **Nav** (`header.site-header`): logo wordmark with `DSH Desktop` suffix · anchor links
+   (Features / Platforms / How it works) · theme toggle. Nav links hide
+   ≤ 760px; brand + theme remain.
 2. **Hero** (`section#top`): left copy column — mono eyebrow chip, `<h1>`, lede,
    `ul.os-strip` (4 OS chips), CTA row (GitHub CTAs + ghost "How it works"), trust line
    (version/status); right visual column — framed, theme-aware app screenshot + mono caption.
@@ -72,7 +73,8 @@ Both pages share one vertical structure (6 landmark sections):
 4. **Platforms** (`#platforms`): two edition cards with tag + capability bullets + repo
    links, plus a coverage disclaimer.
 5. **How it works** (`#how`): 3 numbered steps with arrow connectors, then a result badge.
-6. **Footer**: wordmark + one-liner + ©/license line + repo/language links.
+6. **Footer**: wordmark + one-liner + ©/license line + upstream-project repo links
+   (dsh, dsh-market, harmonypc-electron, Electron alongside the fellow99 repos).
 
 EN/ZH must remain **structurally identical** — section order, element classes, and
 interaction behavior never diverge; only copy is translated.
@@ -108,7 +110,7 @@ interaction behavior never diverge; only copy is translated.
 - Hero background flourish: faint radial accent glow + 64px grid, token-driven.
 - The screenshot is presented as an "app window": 1px hairline border, `--radius-lg`,
   layered resting shadow. No fake window chrome (the dark screenshot already carries the
-  real Windows title bar).
+  real device capture).
 
 ## 5. Interactions
 
