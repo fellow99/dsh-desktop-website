@@ -409,6 +409,37 @@ html[data-theme="dark"] .icon-btn .i-moon {
   align-items: center;
   gap: 0.6rem;
 }
+
+/* language switch — pill control, mirrors the fellow99.github.io hub */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 4px 6px;
+  background: var(--surface);
+}
+.lang {
+  color: var(--muted);
+  padding: 2px 8px;
+  border-radius: 999px;
+  transition: color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.lang:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+.lang.is-active {
+  color: var(--accent-contrast);
+  background: var(--accent);
+}
+.lang-sep {
+  color: var(--hairline-strong);
+}
+
 /* ------------------------------------------------------------------- hero */
 .hero {
   position: relative;

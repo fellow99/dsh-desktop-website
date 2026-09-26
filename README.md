@@ -64,8 +64,8 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 Both pages share one vertical structure (6 landmark sections):
 
 1. **Nav** (`header.site-header`): logo wordmark with `DSH Desktop` suffix · anchor links
-   (Features / Platforms / How it works) · theme toggle. Nav links hide
-   ≤ 760px; brand + theme remain.
+   (Features / Platforms / How it works) · pill language switch (`EN / 中文`) · theme toggle.
+   Nav links hide ≤ 760px; brand + language + theme remain.
 2. **Hero** (`section#top`): left copy column — mono eyebrow chip, `<h1>`, lede,
    `ul.os-strip` (4 OS chips), CTA row (GitHub CTAs + ghost "How it works"), trust line
    (version/status); right visual column — framed, theme-aware app screenshot + mono caption.
