@@ -29,14 +29,13 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="主导航">
-      <a class="brand" href="#top"><img src="images/logo.svg" alt="DeepSeek Harness" class="brand-logo" /><span class="brand-suffix">· 桌面版</span></a>
+      <a class="brand" href="#top"><img src="images/logo.svg" alt="DeepSeek Harness" class="brand-logo" /><span class="brand-suffix">DSH Desktop</span></a>
       <div class="nav-links">
         <a href="#features">特性</a>
         <a href="#platforms">平台</a>
         <a href="#how">实现原理</a>
       </div>
       <div class="nav-actions">
-        <a class="lang-link" href="index.html" aria-label="Switch to English">English</a>
         <button
           id="theme-toggle"
           class="icon-btn"
@@ -63,7 +62,7 @@
         <div class="hero-copy">
           <span class="eyebrow">开源 · MIT · DSH Desktop</span>
           <h1>让 DeepSeek Harness 在桌面安家</h1>
-          <p class="lede">DSH Desktop 将官方 dsh Web UI 原封不动地跑进 Windows、Linux、macOS 与 HarmonyOS 的原生外壳。Agent 主机内置于应用自身，经 localhost 与界面通信：无云端中转、无 CORS、无账号。托盘、原生通知与内置插件市场，开箱即得。</p>
+          <p class="lede">DSH Desktop 将官方 DeepSeek Harness Web UI 原封不动地跑进 Windows、Linux、macOS 与 HarmonyOS 的原生外壳。Agent 主机内置于应用自身，经 localhost 与界面通信：无云端中转、无 CORS、无账号。托盘、原生通知与内置插件市场，开箱即得。</p>
           <ul class="os-strip" aria-label="支持的桌面平台">
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Windows</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Linux</li>
@@ -89,8 +88,8 @@
 
         <div class="hero-visual">
           <figure class="hero-shot">
-            <img src="images/light.png" data-shot="light" alt="运行于原生外壳中的 DeepSeek Harness Web UI 浅色主题界面，界面为简体中文" width="1200" height="800" />
-            <img src="images/dark.png" data-shot="dark" alt="运行于原生外壳中的 DeepSeek Harness Web UI 深色主题界面，带 Windows 标题栏，界面为简体中文" width="1200" height="800" />
+            <img src="images/light.png" data-shot="light" alt="鸿蒙 2in1 设备实拍的 DeepSeek Harness Web UI 浅色主题界面，界面为简体中文" width="1280" height="720" />
+            <img src="images/dark.png" data-shot="dark" alt="鸿蒙 2in1 设备实拍的 DeepSeek Harness Web UI 深色主题界面，界面为简体中文" width="1280" height="720" />
           </figure>
           <p class="shot-caption">DeepSeek Harness 运行于原生外壳中</p>
         </div>
@@ -111,7 +110,7 @@
             <span class="icon">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5"></rect><path d="M16 5.5H6.5A2 2 0 0 0 4.5 7.5V17"></path></svg>
             </span>
-            <h3>100% 官方 dsh —— 上游零改动</h3>
+            <h3>100% 官方 <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">DeepSeek Harness</a> —— 上游零改动</h3>
             <p>官方 Web UI、WebApiClient 与全部插件原样运行。agent 核心从不 fork，dsh 一旦发版即可用上新能力。</p>
           </article>
 
@@ -136,7 +135,7 @@
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v6a5 5 0 0 1-10 0z"></path><path d="M9 7V4.5a1.5 1.5 0 0 1 3 0V7M12 7V4.5a1.5 1.5 0 0 1 3 0V7"></path><path d="M12 18v3"></path></svg>
             </span>
             <h3>插件，一键即得</h3>
-            <p>内置可视化插件市场（dsh-market），在「设置」内即可浏览并安装插件，即刻生效。</p>
+            <p>内置可视化插件市场（<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>），在「设置」内即可浏览并安装插件，即刻生效。</p>
           </article>
         </div>
       </div>
@@ -160,7 +159,7 @@
               <li>系统托盘与原生通知</li>
               <li>无边框窗口 + 自定义标题栏</li>
               <li>剪贴板图片粘贴</li>
-              <li>内置插件市场（dsh-market）</li>
+              <li>内置插件市场（<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>）</li>
               <li>原生安装包：Windows Squirrel · macOS DMG · Linux deb/rpm</li>
               <li>状态：v0.1.5 预览版 · 基于 dsh-v0.1.5-rc.2</li>
             </ul>
@@ -172,16 +171,16 @@
 
           <article class="platform-card">
             <div class="platform-head">
-              <h3>DeepSeek Harness · 鸿蒙版</h3>
+              <h3>DSH Desktop · 鸿蒙版</h3>
               <span class="platform-tag">Electron-on-HarmonyOS · 2in1 与平板</span>
             </div>
             <ul class="bullet-list">
               <li>已在 HarmonyOS NEXT 6.1.0.135（API 24）真机验证</li>
-              <li>完整官方 dsh Web UI —— 前端 100% 复用</li>
+              <li>完整官方 DeepSeek Harness Web UI —— 前端 100% 复用</li>
               <li>端侧会话持久化与全文搜索</li>
-              <li>内置插件市场（dsh-market）</li>
+              <li>内置插件市场（<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>）</li>
               <li>签名 HAP，个人本地分发</li>
-              <li>状态：v0.1.5 预览版 · 基于 dsh-v0.1.5-rc.2 —— 终端与进程沙箱待补齐</li>
+              <li>状态：v0.1.5 预览版 · 基于 dsh-v0.1.5-rc.2</li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-hos" target="_blank" rel="noopener">
               查看 GitHub
@@ -252,7 +251,22 @@
           Workspace 仓库
           <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
         </a>
-        <a href="index.html">English</a>
+        <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">
+          DeepSeek Harness
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">
+          dsh-market（插件市场）
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://atomgit.com/jianguoxu/harmonypc-electron" target="_blank" rel="noopener">
+          harmonypc-electron（Electron-on-鸿蒙运行时）
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://www.electronjs.org/" target="_blank" rel="noopener">
+          Electron
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
       </nav>
     </div>
   </footer>

@@ -29,14 +29,13 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Primary">
-      <a class="brand" href="#top"><img src="images/logo.svg" alt="DeepSeek Harness" class="brand-logo" /><span class="brand-suffix">· Desktop</span></a>
+      <a class="brand" href="#top"><img src="images/logo.svg" alt="DeepSeek Harness" class="brand-logo" /><span class="brand-suffix">DSH Desktop</span></a>
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#platforms">Platforms</a>
         <a href="#how">How it works</a>
       </div>
       <div class="nav-actions">
-        <a class="lang-link" href="index_zh.html" aria-label="Switch to 中文">中文</a>
         <button
           id="theme-toggle"
           class="icon-btn"
@@ -63,7 +62,7 @@
         <div class="hero-copy">
           <span class="eyebrow">Open source · MIT · DSH Desktop Editions</span>
           <h1>Your agent harness, at home on the desktop.</h1>
-          <p class="lede">DSH Desktop runs the official dsh Web UI — untouched — inside native shells for Windows, Linux, macOS and HarmonyOS. The agent host lives in the app itself, talking to the UI over localhost: no cloud relay, no CORS, no account. Tray, notifications and a built-in plugin marketplace included.</p>
+          <p class="lede">DSH Desktop runs the official DeepSeek Harness Web UI — untouched — inside native shells for Windows, Linux, macOS and HarmonyOS. The agent host lives in the app itself, talking to the UI over localhost: no cloud relay, no CORS, no account. Tray, notifications and a built-in plugin marketplace included.</p>
           <ul class="os-strip" aria-label="Supported desktop platforms">
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Windows</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Linux</li>
@@ -89,8 +88,8 @@
 
         <div class="hero-visual">
           <figure class="hero-shot">
-            <img src="images/light.png" data-shot="light" alt="DeepSeek Harness Web UI in light theme running inside the native desktop shell, in Simplified Chinese" width="1200" height="800" />
-            <img src="images/dark.png" data-shot="dark" alt="DeepSeek Harness Web UI in dark theme running inside the native desktop shell with the Windows title bar, in Simplified Chinese" width="1200" height="800" />
+            <img src="images/light.png" data-shot="light" alt="DeepSeek Harness Web UI in light theme, captured on a HarmonyOS 2-in-1 device, in Simplified Chinese" width="1280" height="720" />
+            <img src="images/dark.png" data-shot="dark" alt="DeepSeek Harness Web UI in dark theme, captured on a HarmonyOS 2-in-1 device, in Simplified Chinese" width="1280" height="720" />
           </figure>
           <p class="shot-caption">DeepSeek Harness running in its native shell.</p>
         </div>
@@ -111,7 +110,7 @@
             <span class="icon">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5"></rect><path d="M16 5.5H6.5A2 2 0 0 0 4.5 7.5V17"></path></svg>
             </span>
-            <h3>100% official dsh — zero upstream changes.</h3>
+            <h3>100% official <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">DeepSeek Harness</a> — zero upstream changes.</h3>
             <p>The official Web UI, WebApiClient and every plugin run unmodified. The agent core is never forked, so dsh upgrades land the day they're released.</p>
           </article>
 
@@ -136,7 +135,7 @@
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v6a5 5 0 0 1-10 0z"></path><path d="M9 7V4.5a1.5 1.5 0 0 1 3 0V7M12 7V4.5a1.5 1.5 0 0 1 3 0V7"></path><path d="M12 18v3"></path></svg>
             </span>
             <h3>Plugins, one click away.</h3>
-            <p>The built-in visual marketplace (dsh-market) lets you browse and install plugins right inside Settings, live.</p>
+            <p>The built-in visual marketplace (<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>) lets you browse and install plugins right inside Settings, live.</p>
           </article>
         </div>
       </div>
@@ -160,7 +159,7 @@
               <li>System tray &amp; native notifications</li>
               <li>Frameless window with custom title bar</li>
               <li>Clipboard image paste</li>
-              <li>Built-in plugin marketplace (dsh-market)</li>
+              <li>Built-in plugin marketplace (<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>)</li>
               <li>Native installers: Squirrel (Windows), DMG (macOS), deb/rpm (Linux)</li>
               <li>Status: v0.1.5 prerelease · built on dsh-v0.1.5-rc.2</li>
             </ul>
@@ -172,16 +171,16 @@
 
           <article class="platform-card">
             <div class="platform-head">
-              <h3>DeepSeek Harness · HarmonyOS</h3>
+              <h3>DSH Desktop · HarmonyOS</h3>
               <span class="platform-tag">Electron-on-HarmonyOS · 2in1 &amp; tablet</span>
             </div>
             <ul class="bullet-list">
               <li>Verified on HarmonyOS NEXT 6.1.0.135 (API 24)</li>
-              <li>Full official dsh Web UI — 100% frontend reuse</li>
+              <li>Full official DeepSeek Harness Web UI — 100% frontend reuse</li>
               <li>On-device session persistence &amp; full-text search</li>
-              <li>Built-in plugin marketplace (dsh-market)</li>
+              <li>Built-in plugin marketplace (<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>)</li>
               <li>Signed HAP for personal local distribution</li>
-              <li>Status: v0.1.5 preview · built on dsh-v0.1.5-rc.2 — terminal &amp; process sandbox pending</li>
+              <li>Status: v0.1.5 preview · built on dsh-v0.1.5-rc.2</li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-hos" target="_blank" rel="noopener">
               View on GitHub
@@ -252,7 +251,22 @@
           Workspace repo
           <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
         </a>
-        <a href="index_zh.html">中文</a>
+        <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">
+          DeepSeek Harness
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">
+          dsh-market (plugin marketplace)
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://atomgit.com/jianguoxu/harmonypc-electron" target="_blank" rel="noopener">
+          harmonypc-electron (Electron-on-HarmonyOS runtime)
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://www.electronjs.org/" target="_blank" rel="noopener">
+          Electron
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
       </nav>
     </div>
   </footer>
