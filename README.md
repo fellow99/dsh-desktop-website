@@ -23,7 +23,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 | `index_zh.html` | Simplified Chinese page (`lang="zh-CN"`), 1:1 structural mirror of `index.html` |
 | `style.css` | Shared stylesheet — all theming via CSS custom properties |
 | `script.js` | Shared theme-toggle logic (language-neutral, `data-label-*` driven) |
-| `images/light.png` `images/dark.png` | Real product screenshots captured on a HarmonyOS device, light & dark theme (1280×720) |
+| `images/light.png` `images/dark.png` | Real product screenshots captured on a HarmonyOS device, light & dark theme (1920×1080) |
 
 ## 2. Positioning & key messages
 
@@ -37,13 +37,13 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   (`ul.os-strip`) under the lede, both platform cards, and the platforms disclaimer.
 - **Selling points (feature cards)**: 100% official DeepSeek Harness, zero upstream
   changes ·
-  local-first, in-process host · a desktop citizen (tray / notifications / frameless /
-  clipboard) · plugin marketplace one click away.
+  local-first, in-process host · a desktop citizen (tray / notifications / native window
+  controls / clipboard) · plugin marketplace one click away.
 - **Architecture story ("How it works")**: in-process Host → same-origin UI → official
   data plane (`WebApiClient`), ending with "No CORS · No auth dance · No custom protocol".
 - **Current versions**: `dsh-desktop` **v0.2.0** built on deepseek-harness
   **`dsh-v0.2.0-rc.2`** — its `patches/dsh-v0.2.0-rc.2/` directory and build script pin;
-  `dsh-desktop-hos` **v0.2.0** built on **`dsh-v0.2.0-rc.2`** (built & signed; device verification pending).
+  `dsh-desktop-hos` **v0.2.0** built on **`dsh-v0.2.0-rc.2`** (built & signed; core flows verified on device).
   Keep the website copy, these numbers, and the two product READMEs in step.
 
 ### Copy accuracy guardrails (must hold forever)
