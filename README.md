@@ -58,6 +58,10 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 - The screenshot UI is Simplified Chinese (real product); the caption states this so
   the English page never misleads.
 - When product facts change, update **both** language pages and this doc's facts.
+- **SEO & sharing**: both pages carry `rel="canonical"`, `hreflang` alternates (`en`, `zh-Hans`,
+  `x-default` → `index.html`) and Open Graph tags pointing at the Pages URL
+  `https://fellow99.github.io/dsh-desktop-website/`. Moving the domain means editing both pages
+  and this note.
 
 ## 3. Page structure
 
