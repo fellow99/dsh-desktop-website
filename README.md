@@ -43,7 +43,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   data plane (`WebApiClient`), ending with "No CORS · No auth dance · No custom protocol".
 - **Current versions**: `dsh-desktop` **v0.2.1** built on deepseek-harness
   **`dsh-v0.2.1-rc.2`** — its `patches/dsh-v0.2.1-rc.2/` directory and build script pin;
-  `dsh-desktop-hos` **v0.2.1** built on **`dsh-v0.2.1-rc.2`** (built & signed; core flows verified on device).
+  `dsh-desktop-hos` **v0.2.1** built on **`dsh-v0.2.1-rc.2`** (built & signed; on-device re-verification for 0.2.1 pending — core flows were verified on device for 0.2.0).
   Keep the website copy, these numbers, and the two product READMEs in step.
 
 ### Copy accuracy guardrails (must hold forever)
