@@ -96,7 +96,11 @@
               Get DSH Desktop
             </a>
             <a class="btn btn-outline" href="https://github.com/fellow99/dsh-desktop-hos" target="_blank" rel="noopener">
-              HarmonyOS edition
+              Electron on HarmonyOS Edition
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+            </a>
+            <a class="btn btn-outline" href="https://github.com/fellow99/dsh-desktop-ark" target="_blank" rel="noopener">
+              HarmonyOS Edition
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
             </a>
             <a class="btn btn-ghost" href="#how">
@@ -107,7 +111,9 @@
           <p class="trust">
             Desktop v0.2.1 · built on dsh-v0.2.1-rc.2 · Windows / Linux / macOS installers
             <br>
-            HarmonyOS<sup>(1)</sup> v0.2.1 · built on dsh-v0.2.1-rc.2 · built &amp; signed (on-device re-verification pending; 0.2.0 verified on HarmonyOS 6.1.0.135 / API 24)
+            Electron on HarmonyOS<sup>(1)</sup> v0.2.1 · built on dsh-v0.2.1-rc.2 · built &amp; signed (on-device re-verification pending; 0.2.0 verified on HarmonyOS 6.1.0.135 / API 24)
+            <br>
+            HarmonyOS Edition v0.1.0 (scaffold) · built on dsh-v0.2.1-rc.2 · ArkWeb + in-process Node v24.2.0 · compiles &amp; packages; on-device verification pending
             <br>
             <sup>(1)</sup>Due to Huawei AppGallery listing compliance requirements, the DeepSeek Harness branding has been removed — apologies for the omission.
           </p>
@@ -198,7 +204,7 @@
 
           <article class="platform-card">
             <div class="platform-head">
-              <h3>DSH Desktop · HarmonyOS</h3>
+              <h3>DSH Desktop · Electron on HarmonyOS Edition</h3>
               <span class="platform-tag">Electron-on-HarmonyOS · 2in1 &amp; tablet</span>
             </div>
             <ul class="bullet-list">
@@ -214,9 +220,28 @@
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
             </a>
           </article>
+
+          <article class="platform-card">
+            <div class="platform-head">
+              <h3>DSH Desktop · HarmonyOS Edition</h3>
+              <span class="platform-tag">ArkWeb + in-process Node · 2in1 &amp; tablet</span>
+            </div>
+            <ul class="bullet-list">
+              <li>HarmonyOS 2in1 / tablet · system ArkWeb + in-process Node v24.2.0</li>
+              <li>Same in-process host and same origin — the difference is <em>which runtime provides Node</em></li>
+              <li>Official DeepSeek Harness Web UI — 100% frontend reuse, no ArkUI rewrite</li>
+              <li>No Electron and no bundled Chromium — the system WebView renders the UI</li>
+              <li>Zero upstream patches: an <code>ohos</code> profile, a bundle layer and 5 audited shims</li>
+              <li>Status: v0.1.0 scaffold · unsigned HAP builds with the full runtime; on-device verification pending</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-ark" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+          </article>
         </div>
 
-        <p class="disclaimer">Together, both editions cover four desktop platforms — Windows, Linux &amp; macOS (Electron) plus HarmonyOS. Independent open-source shells built on DeepSeek AI's DeepSeek Harness with zero upstream changes.</p>
+        <p class="disclaimer">Together, the three editions cover four desktop platforms — Windows, Linux &amp; macOS (Electron) plus HarmonyOS, where <strong>two</strong> independent editions ship: <strong>Electron on HarmonyOS</strong> (keeps the Electron runtime) and <strong>HarmonyOS</strong> (system ArkWeb + an embedded Node runtime, no Electron). Independent open-source shells built on DeepSeek AI's DeepSeek Harness with zero upstream changes.</p>
       </div>
     </section>
 
@@ -271,7 +296,11 @@
           <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
         </a>
         <a href="https://github.com/fellow99/dsh-desktop-hos" target="_blank" rel="noopener">
-          HarmonyOS repo
+          Electron on HarmonyOS repo
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://github.com/fellow99/dsh-desktop-ark" target="_blank" rel="noopener">
+          HarmonyOS Edition repo
           <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
         </a>
         <a href="https://github.com/fellow99/deepseek-harness-workspace" target="_blank" rel="noopener">
