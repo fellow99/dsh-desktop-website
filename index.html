@@ -113,7 +113,7 @@
             <br>
             Electron on HarmonyOS<sup>(1)</sup> v0.2.1 · built on dsh-v0.2.1-rc.2 · built &amp; signed (on-device re-verification pending; 0.2.0 verified on HarmonyOS 6.1.0.135 / API 24)
             <br>
-            HarmonyOS Edition v0.1.0 (scaffold) · built on dsh-v0.2.1-rc.2 · ArkWeb + in-process Node v24.2.0 · compiles &amp; packages; on-device verification pending
+            HarmonyOS Edition v0.2.1 · built on dsh-v0.2.1-rc.2 · ArkWeb + in-process Node v24.2.0 · device-verified on HarmonyOS 6.1.0.135 / API 24
             <br>
             <sup>(1)</sup>Due to Huawei AppGallery listing compliance requirements, the DeepSeek Harness branding has been removed — apologies for the omission.
           </p>
@@ -213,7 +213,7 @@
               <li>On-device session persistence &amp; full-text search</li>
               <li>Built-in plugin marketplace (<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>)</li>
               <li>Debug-signed HAP for local development; release signing targets AppGallery</li>
-              <li>Status: v0.2.1 · built on dsh-v0.2.1-rc.2 · built &amp; signed; on-device verification pending</li>
+              <li>Status: v0.2.1 · built on dsh-v0.2.1-rc.2 · built &amp; signed; 0.2.0 verified on device, 0.2.1 re-verification pending</li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-hos" target="_blank" rel="noopener">
               View on GitHub
@@ -231,8 +231,9 @@
               <li>Same in-process host and same origin — the difference is <em>which runtime provides Node</em></li>
               <li>Official DeepSeek Harness Web UI — 100% frontend reuse, no ArkUI rewrite</li>
               <li>No Electron and no bundled Chromium — the system WebView renders the UI</li>
-              <li>Zero upstream patches: an <code>ohos</code> profile, a bundle layer and 5 audited shims</li>
-              <li>Status: v0.1.0 scaffold · unsigned HAP builds with the full runtime; on-device verification pending</li>
+              <li>Zero upstream patches: an <code>ohos</code> profile, a bundle layer, seam plugins and 6 audited shims</li>
+              <li>Installs without restricted permissions (JIT-free default) · HAP ≈ 88 MB</li>
+              <li>Status: v0.2.1 · device-verified on HarmonyOS 6.1.0.135 / API 24 · <a href="https://github.com/fellow99/dsh-desktop-ark/blob/main/docs/%E9%B8%BF%E8%92%99%E7%8E%AF%E5%A2%83%E8%83%BD%E5%8A%9B%E6%B8%85%E5%8D%95-0.2.1.md" target="_blank" rel="noopener">capability inventory</a></li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-ark" target="_blank" rel="noopener">
               View on GitHub

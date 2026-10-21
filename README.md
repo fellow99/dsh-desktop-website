@@ -49,7 +49,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   **`dsh-v0.2.1-rc.2`** — its `patches/dsh-v0.2.1-rc.2/` directory and build script pin;
   `dsh-desktop-hos` **v0.2.1** built on **`dsh-v0.2.1-rc.2`** (built & signed; on-device
   re-verification for 0.2.1 pending — core flows were verified on device for 0.2.0);
-  `dsh-desktop-ark` **v0.1.0 scaffold** on **`dsh-v0.2.1-rc.2`** with Node **v24.2.0**
+  `dsh-desktop-ark` **v0.2.1** on **`dsh-v0.2.1-rc.2`** with Node **v24.2.0**
   (compiles & packages; on-device verification pending).
   Keep the website copy, these numbers, and the three product READMEs in step.
 
