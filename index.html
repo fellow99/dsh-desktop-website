@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DSH Desktop — Native shell for dsh on Windows, Linux, macOS &amp; HarmonyOS</title>
-  <meta name="description" content="Open-source native desktop shells for DeepSeek Harness (dsh): the official agent-harness Web UI on your desktop — Windows, Linux, macOS and HarmonyOS. Local-first, zero upstream changes." />
+  <title>DSH Desktop — Native shell for dsh on Windows, Linux, macOS, HarmonyOS &amp; Android</title>
+  <meta name="description" content="Open-source native shells for DeepSeek Harness (dsh): the official agent-harness Web UI on Windows, Linux, macOS, HarmonyOS and Android. Local-first, zero upstream changes." />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7fb" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0c11" />
   <link rel="canonical" href="https://fellow99.github.io/dsh-desktop-website/index.html" />
@@ -13,8 +13,8 @@
   <link rel="alternate" hreflang="x-default" href="https://fellow99.github.io/dsh-desktop-website/index.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="DSH Desktop" />
-  <meta property="og:title" content="DSH Desktop — Native shell for dsh on Windows, Linux, macOS &amp; HarmonyOS" />
-  <meta property="og:description" content="Open-source native desktop shells for DeepSeek Harness (dsh): the official agent-harness Web UI on your desktop — Windows, Linux, macOS and HarmonyOS. Local-first, zero upstream changes." />
+  <meta property="og:title" content="DSH Desktop — Native shell for dsh on Windows, Linux, macOS, HarmonyOS &amp; Android" />
+  <meta property="og:description" content="Open-source native shells for DeepSeek Harness (dsh): the official agent-harness Web UI on Windows, Linux, macOS, HarmonyOS and Android. Local-first, zero upstream changes." />
   <meta property="og:url" content="https://fellow99.github.io/dsh-desktop-website/index.html" />
   <meta property="og:image" content="https://fellow99.github.io/dsh-desktop-website/images/light.png" />
   <meta property="og:image:width" content="1920" />
@@ -49,6 +49,7 @@
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#platforms">Platforms</a>
+        <a href="#capabilities">Capabilities</a>
         <a href="#how">How it works</a>
       </div>
       <div class="nav-actions">
@@ -83,12 +84,13 @@
         <div class="hero-copy">
           <span class="eyebrow">Open source · MIT · DSH Desktop Editions</span>
           <h1>Your agent harness, at home on the desktop.</h1>
-          <p class="lede">DSH Desktop runs the official DeepSeek Harness Web UI — untouched — inside native shells for Windows, Linux, macOS and HarmonyOS. The agent host lives in the app itself, talking to the UI over localhost: no cloud relay, no CORS, no account. Tray, notifications and a built-in plugin marketplace included.</p>
-          <ul class="os-strip" aria-label="Supported desktop platforms">
+          <p class="lede">DSH Desktop runs the official DeepSeek Harness Web UI — untouched — inside native shells for Windows, Linux, macOS, HarmonyOS and Android. The agent host lives in the app itself, talking to the UI over localhost: no cloud relay, no CORS, no account. Tray, notifications and a built-in plugin marketplace included.</p>
+          <ul class="os-strip" aria-label="Supported platforms">
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Windows</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Linux</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>macOS</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>HarmonyOS</li>
+            <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Android</li>
           </ul>
           <div class="cta-row">
             <a class="btn btn-primary" href="https://github.com/fellow99/dsh-desktop/releases/latest" target="_blank" rel="noopener">
@@ -103,6 +105,10 @@
               HarmonyOS Edition
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
             </a>
+            <a class="btn btn-outline" href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
+              Android Edition
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+            </a>
             <a class="btn btn-ghost" href="#how">
               How it works
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
@@ -114,6 +120,8 @@
             Electron on HarmonyOS<sup>(1)</sup> v0.2.1 · built on dsh-v0.2.1-rc.2 · built &amp; signed (on-device re-verification pending; 0.2.0 verified on HarmonyOS 6.1.0.135 / API 24)
             <br>
             HarmonyOS Edition v0.2.1 · built on dsh-v0.2.1-rc.2 · ArkWeb + in-process Node v24.2.0 · device-verified on HarmonyOS 6.1.0.135 / API 24
+            <br>
+            Android Edition v0.1.0 · built on dsh-v0.2.1-rc.2 · system WebView + in-process Node v24.22.1 · emulator-verified; real-device regression pending · APK ≈ 135 MB
             <br>
             <sup>(1)</sup>Due to Huawei AppGallery listing compliance requirements, the DeepSeek Harness branding has been removed — apologies for the omission.
           </p>
@@ -240,9 +248,102 @@
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
             </a>
           </article>
+
+          <article class="platform-card">
+            <div class="platform-head">
+              <h3>DSH Desktop · Android Edition</h3>
+              <span class="platform-tag">System WebView + in-process Node · phones &amp; tablets</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Android arm64-v8a · system WebView (gate: G-WV ≥ 110) + in-process Node v24.22.1 (small-icu)</li>
+              <li>Same in-process host and same origin — no Electron and no bundled Chromium</li>
+              <li>Official DeepSeek Harness Web UI — 100% frontend reuse</li>
+              <li>Zero upstream patches: an <code>android</code> profile, bundle layer, seam plugins, materialization-time patches and audited shims</li>
+              <li>Shell &amp; subprocess seams, Git (21 tools), in-process ripgrep, SAF two-stage picker, system notifications &amp; foreground keep-alive</li>
+              <li>APK ≈ 135 MB · Status: v0.1.0 · emulator-verified; real-device regression pending</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+          </article>
         </div>
 
-        <p class="disclaimer">Together, the three editions cover four desktop platforms — Windows, Linux &amp; macOS (Electron) plus HarmonyOS, where <strong>two</strong> independent editions ship: <strong>Electron on HarmonyOS</strong> (keeps the Electron runtime) and <strong>HarmonyOS</strong> (system ArkWeb + an embedded Node runtime, no Electron). Independent open-source shells built on DeepSeek AI's DeepSeek Harness with zero upstream changes.</p>
+        <p class="disclaimer">Four editions cover Windows, Linux &amp; macOS (Electron), HarmonyOS — where <strong>two</strong> independent editions ship, <strong>Electron on HarmonyOS</strong> (keeps Electron) and <strong>HarmonyOS</strong> (system ArkWeb + embedded Node, no Electron) — and <strong>Android</strong> (system WebView + embedded Node). Independent open-source shells built on DeepSeek AI's DeepSeek Harness with zero upstream changes.</p>
+      </div>
+    </section>
+
+    <!-- ========================== CAPABILITIES ========================== -->
+    <section id="capabilities" class="section">
+      <div class="container">
+        <p class="section-eyebrow">capability matrix</p>
+        <div class="section-head">
+          <h2>Capability matrix</h2>
+          <p class="section-lede">Icons only — every cell is verified against each edition's source code.</p>
+        </div>
+
+        <ul class="cap-legend">
+          <li><span class="g">✅</span> verified available</li>
+          <li><span class="g">🟢</span> shipped in source — on-device / end-to-end verification pending</li>
+          <li><span class="g">⚠️</span> limited / partial</li>
+          <li><span class="g">❌</span> unavailable or intentionally not built</li>
+          <li><span class="g">⏸</span> deferred</li>
+        </ul>
+
+        <div class="cap-wrap">
+          <table class="cap-table">
+            <thead>
+              <tr>
+                <th scope="col">Capability</th>
+                <th scope="col">Desktop (Electron)</th>
+                <th scope="col">Electron on HarmonyOS</th>
+                <th scope="col">HarmonyOS Edition</th>
+                <th scope="col">Android Edition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cap-group"><td colspan="5">Files &amp; execution</td></tr>
+              <tr><th scope="row">File read / list / write</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">Delete / move / copy / chmod</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Shell commands</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">PTY / terminal panel</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">Content search &amp; glob (ripgrep)</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">web_search / web_fetch</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">File export / sharing</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Background jobs</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+
+              <tr class="cap-group"><td colspan="5">Agent</td></tr>
+              <tr><th scope="row">Subagents</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">todo / goal / present / ask user</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">Skills</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td></tr>
+              <tr><th scope="row">workflow / ralph</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">read_image</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+
+              <tr class="cap-group"><td colspan="5">Platform integration</td></tr>
+              <tr><th scope="row">Plugin marketplace</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Git (21 tools)</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">System notifications</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Clipboard image / text</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Open external links</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Workspace directory picker</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">Escalation approval</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td></tr>
+              <tr><th scope="row">Background keep-alive</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Tray / status-bar icon</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">Single instance</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">Window state / fullscreen</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">Sandboxed process execution</th><td class="cap-glyph">🟢</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">Launch at login</th><td class="cap-glyph">⏸</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">DeepSeek Harness branding</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cap-note">
+          <span>Android Edition is v0.1.0: 🟢 marks source/emulator evidence that still awaits real-device regression.</span>
+          <span>workflow/ralph and the terminal panel are unavailable on the ArkWeb/WebView editions (no spawnable Node helper / no node-pty).</span>
+          <span>The Electron on HarmonyOS Edition ships without DeepSeek Harness branding per AppGallery listing compliance.</span>
+          <span>Full 42-row, source-anchored matrix: <a href="https://github.com/fellow99/deepseek-harness-workspace/blob/main/docs/%E8%83%BD%E5%8A%9B%E5%AF%B9%E7%85%A7%E6%B8%85%E5%8D%95.md" target="_blank" rel="noopener">capability cross-check in the workspace repo</a> · per-edition capability inventories are linked from each product repo.</span>
+        </div>
       </div>
     </section>
 
@@ -302,6 +403,10 @@
         </a>
         <a href="https://github.com/fellow99/dsh-desktop-ark" target="_blank" rel="noopener">
           HarmonyOS Edition repo
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
+          Android Edition repo
           <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
         </a>
         <a href="https://github.com/fellow99/deepseek-harness-workspace" target="_blank" rel="noopener">

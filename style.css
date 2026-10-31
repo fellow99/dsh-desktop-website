@@ -768,6 +768,86 @@ html[data-theme="dark"] img[data-shot="dark"] {
   color: var(--muted);
 }
 
+/* --------------------------------------------------------- capability matrix */
+.cap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.3rem;
+  margin: 0 0 1.3rem;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.cap-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  white-space: nowrap;
+}
+.cap-legend .g {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+.cap-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.cap-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.cap-table th,
+.cap-table td {
+  padding: 0.62rem 0.95rem;
+  text-align: left;
+  border-bottom: 1px solid var(--hairline);
+}
+.cap-table thead th {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  vertical-align: bottom;
+}
+.cap-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.cap-table th + th,
+.cap-table td.cap-glyph {
+  text-align: center;
+  width: 12%;
+  white-space: nowrap;
+  font-size: 1rem;
+  line-height: 1;
+}
+.cap-table .cap-group td {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cap-table tbody tr:not(.cap-group):hover td {
+  background: var(--accent-soft);
+}
+.cap-note {
+  margin-top: 1.1rem;
+  display: grid;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
 /* ------------------------------------------------------------ how it works */
 .steps {
   list-style: none;

@@ -2,8 +2,9 @@
 
 > Product website (landing page) for the **DSH Desktop Editions** — the official
 > homepage of [dsh-desktop](../dsh-desktop), [dsh-desktop-hos](../dsh-desktop-hos)
-> (**Electron on HarmonyOS Edition**) and [dsh-desktop-ark](../dsh-desktop-ark)
-> (**HarmonyOS Edition**).
+> (**Electron on HarmonyOS Edition**), [dsh-desktop-ark](../dsh-desktop-ark)
+> (**HarmonyOS Edition**) and [dsh-desktop-android](../dsh-desktop-android)
+> (**Android Edition**).
 >
 > Live: <https://fellow99.github.io/dsh-desktop-website/>
 
@@ -28,17 +29,18 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 
 ## 2. Positioning & key messages
 
-- **What it is**: marketing landing for the three open-source editions of DSH Desktop for
+- **What it is**: marketing landing for the four open-source editions of DSH Desktop for
   DeepSeek Harness (`dsh`): an Electron shell (Windows / Linux / macOS), **Electron on
-  HarmonyOS Edition** (Electron 37 on HarmonyOS, 2in1 / tablet) and **HarmonyOS Edition**
-  (system ArkWeb + an in-process Node v24.2.0 runtime, no Electron). All three run the
-  **official, unmodified dsh Web UI** same-origin.
+  HarmonyOS Edition** (Electron 37 on HarmonyOS, 2in1 / tablet), **HarmonyOS Edition**
+  (system ArkWeb + an in-process Node v24.2.0 runtime, no Electron) and **Android Edition**
+  (system WebView + an in-process Node v24.22.1 small-icu runtime, no Electron). All four
+  run the **official, unmodified dsh Web UI** same-origin.
 - **Hero slogan**: EN *"Your agent harness, at home on the desktop."* ·
   ZH *「让 DeepSeek Harness 在桌面安家」*.
-- **Four-desktop coverage is the headline differentiator** — Windows, Linux, macOS
-  (Electron Desktop) + HarmonyOS, where **two** editions ship. It appears in: hero lede,
-  the four OS chips (`ul.os-strip`) under the lede, the three platform cards, and the
-  platforms disclaimer.
+- **Multi-platform coverage is the headline differentiator** — Windows, Linux, macOS
+  (Electron Desktop) + HarmonyOS, where **two** editions ship, + Android. It appears in:
+  hero lede, the five OS chips (`ul.os-strip`) under the lede, the four platform cards, and
+  the platforms disclaimer.
 - **Selling points (feature cards)**: 100% official DeepSeek Harness, zero upstream
   changes ·
   local-first, in-process host · a desktop citizen (tray / notifications / native window
@@ -50,16 +52,20 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   `dsh-desktop-hos` **v0.2.1** built on **`dsh-v0.2.1-rc.2`** (built & signed; on-device
   re-verification for 0.2.1 pending — core flows were verified on device for 0.2.0);
   `dsh-desktop-ark` **v0.2.1** on **`dsh-v0.2.1-rc.2`** with Node **v24.2.0**
-  (compiles & packages; on-device verification pending).
-  Keep the website copy, these numbers, and the three product READMEs in step.
+  (device-verified on HarmonyOS 6.1.0.135 / API 24);
+  `dsh-desktop-android` **v0.1.0** on **`dsh-v0.2.1-rc.2`** with Node **v24.22.1**
+  small-icu (emulator-verified; real-device regression pending; APK ≈ 135 MB).
+  Keep the website copy, these numbers, and the four product READMEs in step.
 
 ### Copy accuracy guardrails (must hold forever)
 
 - Every claim traces back to the product READMEs or source. Examples baked in today:
   macOS is covered because `forge.config.ts` ships `MakerDMG` + darwin/`win32`/`linux`
   `MakerZIP`; HarmonyOS verification is HarmonyOS 6.1.0.135 (API 24) on the **Electron on
-  HarmonyOS Edition**; `better-sqlite3` session search exists only on that edition — the
-  HarmonyOS Edition is a scaffold whose `planned` items are listed in its README.
+  HarmonyOS Edition**; `better-sqlite3` session search exists only on that edition.
+  The HarmonyOS Edition is v0.2.1 device-verified (no longer a scaffold); the Android
+  Edition is v0.1.0 and its 🟢 capabilities are code/emulator evidence awaiting a
+  real-device run.
 - **Never fabricate** capabilities: no auto-update, no code signing, no store
   distribution, no "official DeepSeek product" phrasing — the shells are **independent,
   open-source** projects built on DeepSeek AI's DeepSeek Harness.
@@ -73,21 +79,29 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 
 ## 3. Page structure
 
-Both pages share one vertical structure (6 landmark sections):
+Both pages share one vertical structure (7 landmark sections):
 
 1. **Nav** (`header.site-header`): logo wordmark with `DSH Desktop` suffix · anchor links
-   (Features / Platforms / How it works) · pill language switch (`EN / 中文`) · theme toggle.
-   Nav links hide ≤ 760px; brand + language + theme remain.
+   (Features / Platforms / Capabilities / How it works) · pill language switch
+   (`EN / 中文`) · theme toggle. Nav links hide ≤ 760px; brand + language + theme remain.
 2. **Hero** (`section#top`): left copy column — mono eyebrow chip, `<h1>`, lede,
-   `ul.os-strip` (4 OS chips), CTA row (3 GitHub CTAs + ghost "How it works"), trust line
-   (version/status); right visual column — framed, theme-aware app screenshot + mono caption.
+   `ul.os-strip` (5 OS chips), CTA row (4 GitHub CTAs + ghost "How it works"), trust line
+   (version/status for all four editions); right visual column — framed, theme-aware app
+   screenshot + mono caption.
 3. **Features** (`#features`): heading + lede + 4 icon cards (2×2 desktop, 1 col ≤ 820px).
-4. **Platforms** (`#platforms`): three edition cards — `DSH Desktop`,
-   `DSH Desktop · Electron on HarmonyOS Edition`, `DSH Desktop · HarmonyOS Edition` — each
-   with tag + capability bullets + repo links, plus a coverage disclaimer.
-5. **How it works** (`#how`): 3 numbered steps with arrow connectors, then a result badge.
-6. **Footer**: wordmark + one-liner + ©/license line + upstream-project repo links
-   (dsh, dsh-market, harmonypc-electron, Electron alongside the fellow99 repos).
+4. **Platforms** (`#platforms`): four edition cards — `DSH Desktop`,
+   `DSH Desktop · Electron on HarmonyOS Edition`, `DSH Desktop · HarmonyOS Edition`,
+   `DSH Desktop · Android Edition` — each with tag + capability bullets + repo links, plus
+   a coverage disclaimer.
+5. **Capabilities** (`#capabilities`): legend (5 glyphs) + a simplified icon-only
+   capability matrix (27 grouped rows × 4 editions; groups: files & execution, agent,
+   platform integration) + source-linked notes. Every glyph traces to the source-verified
+   cross-check in the workspace repo (`docs/能力对照清单.md`, full 42 rows); when product
+   facts change, update the matrix on **both** pages.
+6. **How it works** (`#how`): 3 numbered steps with arrow connectors, then a result badge.
+7. **Footer**: wordmark + one-liner + ©/license line + upstream-project repo links
+   (dsh, dsh-market, harmonypc-electron, Electron alongside the fellow99 repos), including
+   the Android Edition repo link.
 
 EN/ZH must remain **structurally identical** — section order, element classes, and
 interaction behavior never diverge; only copy is translated.
@@ -144,9 +158,11 @@ interaction behavior never diverge; only copy is translated.
 
 - 2-col hero ≥ 921px (copy : screenshot = `1fr : 1.44fr`, hero container max-width
   `1380px` so the shot renders ~1.5× scale on wide desktops); single column ≤ 920px.
-- `.platform-grid` is `repeat(auto-fit, minmax(300px, 1fr))` — three cards in a row on
-  wide screens, two when narrower, one ≤ 820px; nav links hidden ≤ 760px; `.cta-row`
-  buttons stack full-width and `.steps` go vertical ≤ 640px.
+- `.platform-grid` is `repeat(auto-fit, minmax(300px, 1fr))` — four cards flow 4-up /
+  2-up / 1-up as width narrows; nav links hidden ≤ 760px; `.cta-row` buttons stack
+  full-width and `.steps` go vertical ≤ 640px.
+- The capabilities matrix is wrapped in `.cap-wrap` (horizontal scroll under
+  `min-width: 680px`), so the 5-column table never causes page overflow on phones.
 - Verified no horizontal overflow at 1280 / 768 / 390.
 
 ## 7. Development & deployment

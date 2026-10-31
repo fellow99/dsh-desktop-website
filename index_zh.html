@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DSH Desktop —— Windows / Linux / macOS / HarmonyOS 上的原生 dsh 外壳</title>
-  <meta name="description" content="DeepSeek Harness 的开源原生桌面外壳：把官方 Agent Web UI 带到桌面 —— 支持 Windows、Linux、macOS 与 HarmonyOS。本地优先，上游零改动。" />
+  <title>DSH Desktop —— Windows / Linux / macOS / HarmonyOS / Android 上的原生 dsh 外壳</title>
+  <meta name="description" content="DeepSeek Harness 的开源原生外壳：把官方 Agent Web UI 带到 Windows、Linux、macOS、鸿蒙与 Android。本地优先，上游零改动。" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f7fb" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0c11" />
   <link rel="canonical" href="https://fellow99.github.io/dsh-desktop-website/index_zh.html" />
@@ -13,8 +13,8 @@
   <link rel="alternate" hreflang="x-default" href="https://fellow99.github.io/dsh-desktop-website/index.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="DSH Desktop" />
-  <meta property="og:title" content="DSH Desktop —— Windows / Linux / macOS / HarmonyOS 上的原生 dsh 外壳" />
-  <meta property="og:description" content="DeepSeek Harness 的开源原生桌面外壳：把官方 Agent Web UI 带到桌面 —— 支持 Windows、Linux、macOS 与 HarmonyOS。本地优先，上游零改动。" />
+  <meta property="og:title" content="DSH Desktop —— Windows / Linux / macOS / HarmonyOS / Android 上的原生 dsh 外壳" />
+  <meta property="og:description" content="DeepSeek Harness 的开源原生外壳：把官方 Agent Web UI 带到 Windows、Linux、macOS、鸿蒙与 Android。本地优先，上游零改动。" />
   <meta property="og:url" content="https://fellow99.github.io/dsh-desktop-website/index_zh.html" />
   <meta property="og:image" content="https://fellow99.github.io/dsh-desktop-website/images/light.png" />
   <meta property="og:image:width" content="1920" />
@@ -49,6 +49,7 @@
       <div class="nav-links">
         <a href="#features">特性</a>
         <a href="#platforms">平台</a>
+        <a href="#capabilities">能力对照</a>
         <a href="#how">实现原理</a>
       </div>
       <div class="nav-actions">
@@ -83,12 +84,13 @@
         <div class="hero-copy">
           <span class="eyebrow">开源 · MIT · DSH Desktop Editions</span>
           <h1>让 DeepSeek Harness 在桌面安家</h1>
-          <p class="lede">DSH Desktop 将官方 DeepSeek Harness Web UI 原封不动地跑进 Windows、Linux、macOS 与 HarmonyOS 的原生外壳。Agent 主机内置于应用自身，经 localhost 与界面通信：无云端中转、无 CORS、无账号。托盘、原生通知与内置插件市场，开箱即得。</p>
-          <ul class="os-strip" aria-label="支持的桌面平台">
+          <p class="lede">DSH Desktop 将官方 DeepSeek Harness Web UI 原封不动地跑进 Windows、Linux、macOS、鸿蒙与 Android 的原生外壳。Agent 主机内置于应用自身，经 localhost 与界面通信：无云端中转、无 CORS、无账号。托盘、原生通知与内置插件市场，开箱即得。</p>
+          <ul class="os-strip" aria-label="支持的平台">
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Windows</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Linux</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>macOS</li>
             <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>HarmonyOS</li>
+            <li class="os-chip"><span class="os-dot" aria-hidden="true"></span>Android</li>
           </ul>
           <div class="cta-row">
             <a class="btn btn-primary" href="https://github.com/fellow99/dsh-desktop/releases/latest" target="_blank" rel="noopener">
@@ -103,6 +105,10 @@
               HarmonyOS Edition
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
             </a>
+            <a class="btn btn-outline" href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
+              Android Edition
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+            </a>
             <a class="btn btn-ghost" href="#how">
               了解实现
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
@@ -114,6 +120,8 @@
             Electron on HarmonyOS<sup>(1)</sup> v0.2.1 · 基于 dsh-v0.2.1-rc.2 · 已构建并签名（真机复验待做；0.2.0 已在 HarmonyOS 6.1.0.135 / API 24 验证）
             <br>
             HarmonyOS Edition v0.2.1 · 基于 dsh-v0.2.1-rc.2 · ArkWeb + 进程内 Node v24.2.0 · 已在 HarmonyOS 6.1.0.135 / API 24 真机验证
+            <br>
+            Android Edition v0.1.0 · 基于 dsh-v0.2.1-rc.2 · 系统 WebView + 进程内 Node v24.22.1 · 模拟器验证，真机回归待做 · APK 约 135 MB
             <br>
             <sup>(1)</sup>由于华为应用商城上架合规要求，因此去掉DeepSeek Harness标识，请谅解
           </p>
@@ -240,9 +248,102 @@
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
             </a>
           </article>
+
+          <article class="platform-card">
+            <div class="platform-head">
+              <h3>DSH Desktop · Android Edition</h3>
+              <span class="platform-tag">系统 WebView + 进程内 Node · 手机与平板</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Android arm64-v8a · 系统 WebView（G-WV ≥ 110 门禁）+ 进程内 Node v24.22.1（small-icu）</li>
+              <li>同一个进程内宿主、同一个源 —— 不含 Electron、不打包 Chromium</li>
+              <li>官方 DeepSeek Harness Web UI —— 前端 100% 复用</li>
+              <li>上游零补丁：一个 <code>android</code> profile、一层 bundle、seam 插件、物化期补丁与受审计垫片</li>
+              <li>shell/subprocess seam、Git（21 工具）、进程内 ripgrep、SAF 两段式选择器、系统通知与前台保活</li>
+              <li>APK 约 135 MB · 状态：v0.1.0 · 模拟器验证，真机回归待做</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
+              查看 GitHub
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+          </article>
         </div>
 
-        <p class="disclaimer">三个 edition 合起来覆盖四个桌面平台 —— Windows、Linux、macOS（Electron）与 HarmonyOS；HarmonyOS 端有<strong>两个</strong>独立 edition：<strong>Electron on HarmonyOS</strong>（保留 Electron 运行时）与 <strong>HarmonyOS</strong>（系统 ArkWeb + 内嵌 Node 运行时，不含 Electron）。均为基于 DeepSeek AI 开源 DeepSeek Harness 的独立开源外壳，上游零改动。</p>
+        <p class="disclaimer">四个 edition 覆盖 Windows、Linux、macOS（Electron）、HarmonyOS（<strong>两个</strong>独立 edition：<strong>Electron on HarmonyOS</strong> 保留 Electron 运行时、<strong>HarmonyOS</strong> 用系统 ArkWeb + 内嵌 Node、不含 Electron）与 <strong>Android</strong>（系统 WebView + 内嵌 Node）。均为基于 DeepSeek AI 开源 DeepSeek Harness 的独立开源外壳，上游零改动。</p>
+      </div>
+    </section>
+
+    <!-- ========================== CAPABILITIES ========================== -->
+    <section id="capabilities" class="section">
+      <div class="container">
+        <p class="section-eyebrow">能力对照清单</p>
+        <div class="section-head">
+          <h2>能力对照清单</h2>
+          <p class="section-lede">功能项只显示图例 —— 每一格都经各 edition 源码核实。</p>
+        </div>
+
+        <ul class="cap-legend">
+          <li><span class="g">✅</span> 已核实可用</li>
+          <li><span class="g">🟢</span> 源码已交付（真机/端到端实证待补）</li>
+          <li><span class="g">⚠️</span> 受限 / 部分可用</li>
+          <li><span class="g">❌</span> 无或已决策不做</li>
+          <li><span class="g">⏸</span> 暂缓</li>
+        </ul>
+
+        <div class="cap-wrap">
+          <table class="cap-table">
+            <thead>
+              <tr>
+                <th scope="col">能力</th>
+                <th scope="col">Desktop（Electron）</th>
+                <th scope="col">Electron on HarmonyOS</th>
+                <th scope="col">HarmonyOS Edition</th>
+                <th scope="col">Android Edition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cap-group"><td colspan="5">文件与执行</td></tr>
+              <tr><th scope="row">读文件 / 列目录 / 写文件</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">删除 / 移动 / 复制 / chmod</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Shell 命令执行</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">PTY / 终端面板</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">内容搜索与 glob（ripgrep）</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">web_search / web_fetch</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">文件导出 / 外发</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">后台任务</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+
+              <tr class="cap-group"><td colspan="5">Agent</td></tr>
+              <tr><th scope="row">子 agent</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">todo / goal / present / 向用户提问</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">技能（skill）</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td></tr>
+              <tr><th scope="row">workflow / ralph</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">read_image</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+
+              <tr class="cap-group"><td colspan="5">平台集成</td></tr>
+              <tr><th scope="row">插件市场</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Git（21 工具）</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">系统通知</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">剪贴板读图 / 写文本</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">外部打开链接</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">工作区目录选择器</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">提权审批</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td></tr>
+              <tr><th scope="row">后台常驻</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">托盘 / 状态栏图标</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">单实例</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
+              <tr><th scope="row">窗口状态记忆 / 全屏</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">进程级沙箱执行</th><td class="cap-glyph">🟢</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">开机自启</th><td class="cap-glyph">⏸</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">DeepSeek Harness 品牌标识</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cap-note">
+          <span>Android Edition 当前为 v0.1.0：🟢 表示代码/模拟器实证已在，真机回归待补。</span>
+          <span>ArkWeb/WebView edition 不提供 workflow/ralph 与终端面板（无可 spawn 的 Node 辅助进程 / 无 node-pty）。</span>
+          <span>Electron on HarmonyOS Edition 因 AppGallery 上架合规要求不带 DeepSeek Harness 品牌标识。</span>
+          <span>完整 42 行、锚定源码的矩阵见 workspace 仓库的<a href="https://github.com/fellow99/deepseek-harness-workspace/blob/main/docs/%E8%83%BD%E5%8A%9B%E5%AF%B9%E7%85%A7%E6%B8%85%E5%8D%95.md" target="_blank" rel="noopener">能力对照清单</a>；各 edition 自己的能力清单见对应产品仓库。</span>
+        </div>
       </div>
     </section>
 
@@ -302,6 +403,10 @@
         </a>
         <a href="https://github.com/fellow99/dsh-desktop-ark" target="_blank" rel="noopener">
           HarmonyOS Edition 仓库
+          <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
+        </a>
+        <a href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
+          Android Edition 仓库
           <svg class="ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9M18 13v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7"></path></svg>
         </a>
         <a href="https://github.com/fellow99/deepseek-harness-workspace" target="_blank" rel="noopener">
