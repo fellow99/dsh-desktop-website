@@ -48,12 +48,12 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 - **Architecture story ("How it works")**: in-process Host → same-origin UI → official
   data plane (`WebApiClient`), ending with "No CORS · No auth dance · No custom protocol".
 - **Current versions**: `dsh-desktop` **v0.2.1** built on deepseek-harness
-  **`dsh-v0.2.1-rc.2`** — its `patches/dsh-v0.2.1-rc.2/` directory and build script pin;
-  `dsh-desktop-hos` **v0.2.1** built on **`dsh-v0.2.1-rc.2`** (built & signed; on-device
+  **`dsh-v0.2.1-rc.5`** — its `patches/dsh-v0.2.1-rc.5/` directory and build script pin;
+  `dsh-desktop-hos` **v0.2.1** built on **`dsh-v0.2.1-rc.5`** (built & signed; on-device
   re-verification for 0.2.1 pending — core flows were verified on device for 0.2.0);
-  `dsh-desktop-ark` **v0.2.1** on **`dsh-v0.2.1-rc.2`** with Node **v24.2.0**
+  `dsh-desktop-ark` **v0.2.1** on **`dsh-v0.2.1-rc.5`** with Node **v24.2.0**
   (device-verified on HarmonyOS 6.1.0.135 / API 24);
-  `dsh-desktop-android` **v0.1.0** on **`dsh-v0.2.1-rc.2`** with Node **v24.22.1**
+  `dsh-desktop-android` **v0.2.1** on **`dsh-v0.2.1-rc.5`** with Node **v24.22.1**
   small-icu (emulator-verified; real-device regression pending; APK ≈ 135 MB).
   Keep the website copy, these numbers, and the four product READMEs in step.
 
