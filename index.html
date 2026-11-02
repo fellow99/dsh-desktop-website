@@ -121,7 +121,7 @@
             <br>
             HarmonyOS Edition v0.2.1 · built on dsh-v0.2.1-rc.5 · ArkWeb + in-process Node v24.2.0 · device-verified on HarmonyOS 6.1.0.135 / API 24
             <br>
-            Android Edition v0.2.1 · built on dsh-v0.2.1-rc.5 · system WebView + in-process Node v24.22.1 · emulator-verified; real-device regression pending · APK ≈ 135 MB
+            Android Edition v0.2.1 · built on dsh-v0.2.1-rc.5 · system WebView + in-process Node v26.13.0 · real-device verified · APK ≈ 135 MB
             <br>
             <sup>(1)</sup>Due to Huawei AppGallery listing compliance requirements, the DeepSeek Harness branding has been removed — apologies for the omission.
           </p>
@@ -255,12 +255,12 @@
               <span class="platform-tag">System WebView + in-process Node · phones &amp; tablets</span>
             </div>
             <ul class="bullet-list">
-              <li>Android arm64-v8a · system WebView (gate: G-WV ≥ 110) + in-process Node v24.22.1 (small-icu)</li>
+              <li>Android arm64-v8a · system WebView (gate: G-WV ≥ 110) + in-process Node v26.13.0 (small-icu)</li>
               <li>Same in-process host and same origin — no Electron and no bundled Chromium</li>
               <li>Official DeepSeek Harness Web UI — 100% frontend reuse</li>
               <li>Zero upstream patches: an <code>android</code> profile, bundle layer, seam plugins, materialization-time patches and audited shims</li>
               <li>Shell &amp; subprocess seams, Git (21 tools), in-process ripgrep, SAF two-stage picker, system notifications &amp; foreground keep-alive</li>
-              <li>APK ≈ 135 MB · Status: v0.1.0 · emulator-verified; real-device regression pending</li>
+              <li>APK ≈ 135 MB · Status: v0.2.1 · real-device verified</li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
               View on GitHub
@@ -339,7 +339,7 @@
         </div>
 
         <div class="cap-note">
-          <span>Android Edition is v0.2.1: 🟢 marks source/emulator evidence that still awaits real-device regression.</span>
+          <span>Android Edition is v0.2.1: real-device verified (functional + end-side capability self-check).</span>
           <span>workflow/ralph and the terminal panel are unavailable on the ArkWeb/WebView editions (no spawnable Node helper / no node-pty).</span>
           <span>The Electron on HarmonyOS Edition ships without DeepSeek Harness branding per AppGallery listing compliance.</span>
           <span>Full 42-row, source-anchored matrix: <a href="https://github.com/fellow99/deepseek-harness-workspace/blob/main/docs/%E8%83%BD%E5%8A%9B%E5%AF%B9%E7%85%A7%E6%B8%85%E5%8D%95.md" target="_blank" rel="noopener">capability cross-check in the workspace repo</a> · per-edition capability inventories are linked from each product repo.</span>

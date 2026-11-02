@@ -121,7 +121,7 @@
             <br>
             HarmonyOS Edition v0.2.1 · 基于 dsh-v0.2.1-rc.5 · ArkWeb + 进程内 Node v24.2.0 · 已在 HarmonyOS 6.1.0.135 / API 24 真机验证
             <br>
-            Android Edition v0.2.1 · 基于 dsh-v0.2.1-rc.5 · 系统 WebView + 进程内 Node v24.22.1 · 模拟器验证，真机回归待做 · APK 约 135 MB
+            Android Edition v0.2.1 · 基于 dsh-v0.2.1-rc.5 · 系统 WebView + 进程内 Node v26.13.0 · 真机验证 · APK 约 135 MB
             <br>
             <sup>(1)</sup>由于华为应用商城上架合规要求，因此去掉DeepSeek Harness标识，请谅解
           </p>
@@ -255,12 +255,12 @@
               <span class="platform-tag">系统 WebView + 进程内 Node · 手机与平板</span>
             </div>
             <ul class="bullet-list">
-              <li>Android arm64-v8a · 系统 WebView（G-WV ≥ 110 门禁）+ 进程内 Node v24.22.1（small-icu）</li>
+              <li>Android arm64-v8a · 系统 WebView（G-WV ≥ 110 门禁）+ 进程内 Node v26.13.0（small-icu）</li>
               <li>同一个进程内宿主、同一个源 —— 不含 Electron、不打包 Chromium</li>
               <li>官方 DeepSeek Harness Web UI —— 前端 100% 复用</li>
               <li>上游零补丁：一个 <code>android</code> profile、一层 bundle、seam 插件、物化期补丁与受审计垫片</li>
               <li>shell/subprocess seam、Git（21 工具）、进程内 ripgrep、SAF 两段式选择器、系统通知与前台保活</li>
-              <li>APK 约 135 MB · 状态：v0.1.0 · 模拟器验证，真机回归待做</li>
+              <li>APK 约 135 MB · 状态：v0.2.1 · 真机验证</li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
               查看 GitHub
@@ -339,7 +339,7 @@
         </div>
 
         <div class="cap-note">
-          <span>Android Edition 当前为 v0.1.0：🟢 表示代码/模拟器实证已在，真机回归待补。</span>
+          <span>Android Edition 当前为 v0.2.1：真机已验证（功能 + 端侧环境能力自检）。</span>
           <span>ArkWeb/WebView edition 不提供 workflow/ralph 与终端面板（无可 spawn 的 Node 辅助进程 / 无 node-pty）。</span>
           <span>Electron on HarmonyOS Edition 因 AppGallery 上架合规要求不带 DeepSeek Harness 品牌标识。</span>
           <span>完整 42 行、锚定源码的矩阵见 workspace 仓库的<a href="https://github.com/fellow99/deepseek-harness-workspace/blob/main/docs/%E8%83%BD%E5%8A%9B%E5%AF%B9%E7%85%A7%E6%B8%85%E5%8D%95.md" target="_blank" rel="noopener">能力对照清单</a>；各 edition 自己的能力清单见对应产品仓库。</span>

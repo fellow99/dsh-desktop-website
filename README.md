@@ -33,7 +33,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   DeepSeek Harness (`dsh`): an Electron shell (Windows / Linux / macOS), **Electron on
   HarmonyOS Edition** (Electron 37 on HarmonyOS, 2in1 / tablet), **HarmonyOS Edition**
   (system ArkWeb + an in-process Node v24.2.0 runtime, no Electron) and **Android Edition**
-  (system WebView + an in-process Node v24.22.1 small-icu runtime, no Electron). All four
+  (system WebView + an in-process Node v26.13.0 small-icu runtime, no Electron). All four
   run the **official, unmodified dsh Web UI** same-origin.
 - **Hero slogan**: EN *"Your agent harness, at home on the desktop."* ·
   ZH *「让 DeepSeek Harness 在桌面安家」*.
@@ -53,7 +53,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   re-verification for 0.2.1 pending — core flows were verified on device for 0.2.0);
   `dsh-desktop-ark` **v0.2.1** on **`dsh-v0.2.1-rc.5`** with Node **v24.2.0**
   (device-verified on HarmonyOS 6.1.0.135 / API 24);
-  `dsh-desktop-android` **v0.2.1** on **`dsh-v0.2.1-rc.5`** with Node **v24.22.1**
+  `dsh-desktop-android` **v0.2.1** on **`dsh-v0.2.1-rc.5`** with Node **v26.13.0**
   small-icu (emulator-verified; real-device regression pending; APK ≈ 135 MB).
   Keep the website copy, these numbers, and the four product READMEs in step.
 
