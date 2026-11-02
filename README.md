@@ -64,8 +64,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   `MakerZIP`; HarmonyOS verification is HarmonyOS 6.1.0.135 (API 24) on the **Electron on
   HarmonyOS Edition**; `better-sqlite3` session search exists only on that edition.
   The HarmonyOS Edition is v0.2.1 device-verified (no longer a scaffold); the Android
-  Edition is v0.1.0 and its 🟢 capabilities are code/emulator evidence awaiting a
-  real-device run.
+  Edition is v0.2.1 real-device verified (functional + end-side capability self-check).
 - **Never fabricate** capabilities: no auto-update, no code signing, no store
   distribution, no "official DeepSeek product" phrasing — the shells are **independent,
   open-source** projects built on DeepSeek AI's DeepSeek Harness.
