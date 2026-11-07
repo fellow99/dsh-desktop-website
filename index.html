@@ -202,6 +202,7 @@
               <li>Clipboard image paste</li>
               <li>Built-in plugin marketplace (<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>)</li>
               <li>Native installers: Squirrel (Windows), DMG (macOS), deb/rpm (Linux)</li>
+              <li>Full host-OS terminal with real PTY (bash/zsh/PowerShell, git/curl/python/…)</li>
               <li>Status: v0.2.1 · built on dsh-v0.2.1-rc.5 · unsigned builds, no auto-update</li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop" target="_blank" rel="noopener">
@@ -220,6 +221,7 @@
               <li>Official DeepSeek Harness Web UI — 100% frontend reuse</li>
               <li>On-device session persistence &amp; full-text search</li>
               <li>Built-in plugin marketplace (<a href="https://github.com/dsh-market/dsh-market" target="_blank" rel="noopener">dsh-market</a>)</li>
+              <li>Terminal = resident <code>mksh</code> + toybox command set</li>
               <li>Debug-signed HAP for local development; release signing targets AppGallery</li>
               <li>Status: v0.2.1 · built on dsh-v0.2.1-rc.5 · built &amp; signed; 0.2.0 verified on device, 0.2.1 re-verification pending</li>
             </ul>
@@ -241,6 +243,7 @@
               <li>No Electron and no bundled Chromium — the system WebView renders the UI</li>
               <li>Zero upstream patches: an <code>ohos</code> profile, a bundle layer, seam plugins and 6 audited shims</li>
               <li>Installs without restricted permissions (JIT-free default) · HAP ≈ 88 MB</li>
+              <li>Command execution in tree, PTY terminal panel unavailable</li>
               <li>Status: v0.2.1 · device-verified on HarmonyOS 6.1.0.135 / API 24 · <a href="https://github.com/fellow99/dsh-desktop-ark/blob/main/docs/%E9%B8%BF%E8%92%99%E7%8E%AF%E5%A2%83%E8%83%BD%E5%8A%9B%E6%B8%85%E5%8D%95-0.2.1.md" target="_blank" rel="noopener">capability inventory</a></li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-ark" target="_blank" rel="noopener">
@@ -259,7 +262,8 @@
               <li>Same in-process host and same origin — no Electron and no bundled Chromium</li>
               <li>Official DeepSeek Harness Web UI — 100% frontend reuse</li>
               <li>Zero upstream patches: an <code>android</code> profile, bundle layer, seam plugins, materialization-time patches and audited shims</li>
-              <li>Shell &amp; subprocess seams, Git (21 tools), in-process ripgrep, SAF two-stage picker, system notifications &amp; foreground keep-alive</li>
+              <li>Shell &amp; subprocess seams, Git (single passthrough tool), in-process ripgrep, SAF two-stage picker, system notifications &amp; foreground keep-alive</li>
+              <li>Terminal = resident <code>mksh</code>; bundled CLI (git/node/npm/pnpm/python/pip/uv) + built-in toybox/awk/sed/tr/tar/gzip/sha256sum/curl/ping/pm/getprop/logcat</li>
               <li>APK ≈ 135 MB · Status: v0.2.1 · real-device verified</li>
             </ul>
             <a class="repo-link" href="https://github.com/fellow99/dsh-desktop-android" target="_blank" rel="noopener">
@@ -307,6 +311,7 @@
               <tr><th scope="row">Delete / move / copy / chmod</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">🟢</td></tr>
               <tr><th scope="row">Shell commands</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
               <tr><th scope="row">PTY / terminal panel</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td><td class="cap-glyph">❌</td></tr>
+              <tr><th scope="row">Terminal commands (usable CLI set)</th><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
               <tr><th scope="row">Content search &amp; glob (ripgrep)</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">✅</td></tr>
               <tr><th scope="row">web_search / web_fetch</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">✅</td></tr>
               <tr><th scope="row">File export / sharing</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
@@ -321,7 +326,7 @@
 
               <tr class="cap-group"><td colspan="5">Platform integration</td></tr>
               <tr><th scope="row">Plugin marketplace</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td></tr>
-              <tr><th scope="row">Git (21 tools)</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td></tr>
+              <tr><th scope="row">Git</th><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">✅</td><td class="cap-glyph">🟢</td></tr>
               <tr><th scope="row">System notifications</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
               <tr><th scope="row">Clipboard image / text</th><td class="cap-glyph">✅</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
               <tr><th scope="row">Open external links</th><td class="cap-glyph">✅</td><td class="cap-glyph">❌</td><td class="cap-glyph">⚠️</td><td class="cap-glyph">🟢</td></tr>
