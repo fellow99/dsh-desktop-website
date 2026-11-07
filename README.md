@@ -32,7 +32,7 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
 - **What it is**: marketing landing for the four open-source editions of DSH Desktop for
   DeepSeek Harness (`dsh`): an Electron shell (Windows / Linux / macOS), **Electron on
   HarmonyOS Edition** (Electron 37 on HarmonyOS, 2in1 / tablet), **HarmonyOS Edition**
-  (system ArkWeb + an in-process Node v24.2.0 runtime, no Electron) and **Android Edition**
+  (system ArkWeb + an in-process Node v26.13.0 runtime, no Electron) and **Android Edition**
   (system WebView + an in-process Node v26.13.0 small-icu runtime, no Electron). All four
   run the **official, unmodified dsh Web UI** same-origin.
 - **Hero slogan**: EN *"Your agent harness, at home on the desktop."* ·
@@ -47,14 +47,14 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   controls / clipboard) · plugin marketplace one click away.
 - **Architecture story ("How it works")**: in-process Host → same-origin UI → official
   data plane (`WebApiClient`), ending with "No CORS · No auth dance · No custom protocol".
-- **Current versions**: `dsh-desktop` **v0.2.1** built on deepseek-harness
-  **`dsh-v0.2.1-rc.5`** — its `patches/dsh-v0.2.1-rc.5/` directory and build script pin;
-  `dsh-desktop-hos` **v0.2.1** built on **`dsh-v0.2.1-rc.5`** (built & signed; on-device
-  re-verification for 0.2.1 pending — core flows were verified on device for 0.2.0);
-  `dsh-desktop-ark` **v0.2.1** on **`dsh-v0.2.1-rc.5`** with Node **v24.2.0**
-  (device-verified on HarmonyOS 6.1.0.135 / API 24);
-  `dsh-desktop-android` **v0.2.1** on **`dsh-v0.2.1-rc.5`** with Node **v26.13.0**
-  small-icu (emulator-verified; real-device regression pending; APK ≈ 135 MB).
+- **Current versions**: `dsh-desktop` **v0.2.2** built on deepseek-harness
+  **`dsh-v0.2.2-rc.1`** — its `patches/dsh-v0.2.2-rc.1/` directory and build script pin;
+  `dsh-desktop-hos` **v0.2.2** built on **`dsh-v0.2.2-rc.1`** (built & signed; on-device
+  re-verification for 0.2.2 pending — core flows were verified on device for 0.2.0);
+  `dsh-desktop-ark` **v0.2.2** on **`dsh-v0.2.2-rc.1`** with Node **v26.13.0**
+  (built; on-device verification pending — 0.2.1 device-verified on HarmonyOS 6.1.0.135 / API 24);
+  `dsh-desktop-android` **v0.2.2** on **`dsh-v0.2.2-rc.1`** with Node **v26.13.0**
+  small-icu (built; on-device verification for 0.2.2 in progress — 0.2.1 real-device verified; APK ≈ 140 MB).
   Keep the website copy, these numbers, and the four product READMEs in step.
 
 ### Copy accuracy guardrails (must hold forever)
@@ -63,8 +63,8 @@ and is deployed to GitHub Pages by a [workflow](./.github/workflows/pages.yml).
   macOS is covered because `forge.config.ts` ships `MakerDMG` + darwin/`win32`/`linux`
   `MakerZIP`; HarmonyOS verification is HarmonyOS 6.1.0.135 (API 24) on the **Electron on
   HarmonyOS Edition**; `better-sqlite3` session search exists only on that edition.
-  The HarmonyOS Edition is v0.2.1 device-verified (no longer a scaffold); the Android
-  Edition is v0.2.1 real-device verified (functional + end-side capability self-check).
+  The HarmonyOS Edition is v0.2.2 built (0.2.1 device-verified, no longer a scaffold); the Android
+  Edition is v0.2.2 built (0.2.1 real-device verified; 0.2.2 on-device verification in progress).
 - **Never fabricate** capabilities: no auto-update, no code signing, no store
   distribution, no "official DeepSeek product" phrasing — the shells are **independent,
   open-source** projects built on DeepSeek AI's DeepSeek Harness.
